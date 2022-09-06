@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nameless Person/プロフィール</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Video&Web Production foodunited." />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/luxbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal-video.min.css">
+    <link rel="stylesheet" href="mailform/mailform.css">
+    <link href="../fonts.googleapis.com/css2d9f6.css?family=Jost:wght@300&amp;display=swap" rel="stylesheet">
+    <link href="../use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="loader-bg">
+        <div id="loader">
+            　<img src="images/loader.gif" alt="Loading..." />
+            　<p>Loading...</p>
+        </div>
+    </div>
+    <div id="contents">
+        <header id="luxbar" class="luxbar-fixed">
+            <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox" />
+            <div class="luxbar-menu luxbar-menu-right luxbar-menu-dark">
+                <ul class="luxbar-navigation">
+                    <li class="luxbar-header">
+                        <!-- <h1><a href="#" class="luxbar-brand"><img src="images/" alt=""></a></h1> -->
+                        <label class="luxbar-hamburger luxbar-hamburger-doublespin" id="luxbar-hamburger"
+                            for="luxbar-checkbox"> <span></span> </label>
+                    </li>
+                    <li class="luxbar-item"><a href="../index.html">ホーム</a></li>
+                    <li class="luxbar-item"><a href="../information/index.html">お知らせ</a></li>
+                    <li class="luxbar-item"><a href="../Academic background_career/index.html">学歴・職歴</a></li>
+                    <li class="luxbar-item"><a href="index.html">プロフィール</a></li>
+                    <li class="luxbar-item"><a href="../license/index.html">保有ライセンス</a></li>
+                    <li class="luxbar-item"><a href="../sns/index.html">SNS</a></li>
+                    <li class="luxbar-item"><a href="../questionbox/index.html">質問箱</a></li>
+                    <li class="luxbar-item"><a href="../contact/index.html">問い合わせ</a></li>
+                    <li class="luxbar-item"><a href="../gaibulink/index.html">外部リンク</a></li>
+                </ul>
+            </div>
+    </div>
+    <div>
+    </header>
+    <div>
+        <div class="box about">
+            <h2>プロフィール</h2>
+            <p>出身地：「東京都」　生年月日：「ひみつ！」<br>
+            好きな食べ物：「なし」　嫌いな食べ物：「なし」</p><br>
+            <h5>みんなからの呼ばれ方</h5>
+            私自身名前が嫌いなので、みんなに好きなように名前をつけてもらっています！<br><br>
+            <h4>趣味</h4>
+            <p>ぶっちゃけ今は趣味と言える趣味はありません。<br>
+                ちなみに以前は...<br>
+                写真撮影、音楽鑑賞、映像鑑賞(主にニュース/バラエティー/ドラマ)、散歩、家電屋さん巡り<br>
+                ラーメン屋さん巡り、電化製品の修理/改造、DIY(以前、椅子とか作った事があるよ)<br>
+                気が向けばその他飲食店巡り、深夜テンションでの創作ダンス<br>
+                パソコンで適当な作業、パソコン分解/改造<br><br>
+                
+                あ、あった！今の趣味とすれば...心身を破壊し無理をしてでも仕事をすること！笑
+            </p><br><br>
+            <h4>特技</h4>
+            <p>右肩/右腕/左腕/左足の「関節鳴らし」<br>
+                両手人差し指のバネ指現象<br>
+                割と感覚だけでなんでも出来る、物失くし<br>
+                他わからん 笑<br>
+            </p><br><br>
+            <h4>私ができること</h4>
+            <p>Webサイト制作、Webエンジニア、軽度のシステムエンジニア<br>
+                軽度のホワイトハッカー、サウンド制作、写真撮影、動画撮影、写真加工・修正、動画編集<br>
+                配信管理及び作業、音響管理及び作業、各種AV機器の修理・改造・メンテナンス<br>
+                少しの楽器演奏、企業再建、経営再建、<br>
+                他わからん 笑<br>
+            </p><br><br>
+        </div>
+    </div>
+        <footer>
+            <p>wataame110.</p>
+        </footer>
+    </div>
+        <!--loader-->
+        <script>
+            $(function () {
+                var h = $(window).height(); // ブラウザウィンドウの高さを取得する
+                $('#contents').css('display', 'none'); // コンテンツを非表示にする
+                $('#loader-bg ,#loader').height(h).css('display', 'block'); //ローディング画像を表示
+            });
+            $(window).on('load', function () { // 読み込み完了したら実行する
+                $('#loader-bg').delay(900).fadeOut(800); // ローディングを隠す
+                $('#loader').delay(600).fadeOut(300);
+                $('#contens').css('display', 'block'); // コンテンツを表示する
+            });
+        </script>
+        <!--modal-->
+        <script src="../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/jquery-modal-video.js"></script>
+        <script>
+            $(".js-video-button").modalVideo({
+                youtube: {
+                    controls: 1,
+                    nocookie: true
+                }
+            });
+            $(".js-modal-btn-vimeo").modalVideo({
+                channel: 'vimeo'
+            });
+        </script>
+        <!--smooth scroll-->
+        <script>
+            jQuery(function () {
+                // ★　任意のズレ高さピクセル数を入力　↓
+                var headerHight = 100;
+                // #で始まるアンカーをクリックした場合に処理
+                jQuery('a[href^=#]').click(function () {
+                    // スクロールの速度
+                    var speed = 400; // ミリ秒
+                    // アンカーの値取得
+                    var href = jQuery(this).attr("href");
+                    // 移動先を取得
+                    var target = jQuery(href == "#" || href == "" ? 'html' : href);
+                    // 移動先を数値で取得
+                    var position = target.offset().top - headerHight; // ※　-headerHightでズレの処理
+                    // スムーズスクロール
+                    jQuery('body,html').animate({
+                        scrollTop: position
+                    }, speed, 'swing');
+                    return false;
+                });
+            });
+        </script>
+        <script>
+            $(function () {
+                $('.luxbar-item a').on('click', function (event) {
+                    $('#luxbar-checkbox').prop('checked', false);
+                });
+            });
+        </script>
+        <script src="js/totop.js"></script>
+        <script src="js/slide.js"></script>
+
+</body>
+<!-- Mirrored from www.foodunited.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Aug 2022 03:27:12 GMT -->
+
+</html>

@@ -1,0 +1,196 @@
+@media screen and (max-width:900px) {
+
+    .box ul,
+    .box_v ul,
+    .box_i ul {
+        display: block !important;
+    }
+
+    .box ul li,
+    .box_v ul li,
+    .box_i ul li {
+        margin-bottom: 5em !important;
+    }
+
+    .box_i ul li figure {
+        text-align: center !important;
+    }
+}
+
+
+body {
+    font-family: 'Jost', sans-serif;
+    background-color: #fff;
+}
+
+h1 img {
+    width: 150px;
+    padding-top: 10px;
+}
+
+h2 {
+    margin-top: 3em;
+    font-size: 200%;
+    text-align: center
+}
+
+h4 {
+    margin-bottom: 0.5em
+}
+
+.box,
+.box_v {
+
+    width: 100%;
+}
+
+.box ul,
+.box_v ul {
+    display: flex;
+    margin-top: 5em;
+}
+
+.box ul li,
+.box_v ul li {
+    width: 100%;
+    list-style: none;
+}
+
+.box ul li img,
+.box_v ul li img {
+    width: 100%;
+    height: auto;
+}
+
+.box_v ul li a {
+    color: white;
+}
+
+.box_v ul li figure {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+
+}
+
+.box_v ul li figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    -webkit-transition: .3s;
+    transition: .3s;
+    opacity: 0;
+    text-align: center;
+    padding-top: 25%;
+    overflow: hidden;
+
+}
+
+.box_v ul li figure img {
+    display: block;
+}
+
+.box_v ul li figure:hover figcaption {
+    opacity: 1;
+}
+
+.box figcaption {
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.box_i {
+    width: 100%;
+    margin-top: 5em;
+}
+
+.box_i ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.box_i ul li {
+    width: 100%;
+    height: auto;
+    margin-top: 5em;
+}
+
+.box_i ul li img {
+    width: 90%;
+    height: auto;
+}
+
+.box_i ul li figure {
+    text-align: center;
+}
+
+.about {
+    text-align: center;
+    line-height: 2;
+}
+
+.about {
+    font-size: 90%;
+}
+
+#about {
+    margin-bottom: 2em;
+}
+
+footer {
+    background: #cfcfcf;
+    text-align: center;
+    margin-top: 5em;
+    font-size: 80%;
+    padding: 15px;
+}
+
+/*loader*/
+#loader-bg {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+#loader {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+    text-align: center;
+    color: #000;
+    z-index: 2;
+}
+
+#contens {
+    text-align: center;
+    margin-top: 30%;
+    font-size: 20px;
+    color: white;
+}
+
+.dvd li {
+    text-align: center;
+    margin: 0 !important;
+}
+
+.dvd li iframe {
+    width: 100% !important;
+    height: 240px;
+    margin: 0 !important;
+}

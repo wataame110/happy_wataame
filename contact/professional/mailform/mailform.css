@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+
+
+form#mailform {
+    padding: 5px;
+    background: #f2f2f2;
+    margin-top: 5em;
+}
+
+
+/*新フォーム*/
+.cp_iptxt {
+    position: relative;
+    width: 90%;
+    margin: 40px auto;
+}
+
+.cp_iptxt input[type='text'] {
+    font: 15px/24px sans-serif;
+    box-sizing: border-box;
+    width: 100% !important;
+    padding: 0.3em;
+    transition: 0.3s;
+    letter-spacing: 1px;
+    color: #aaaaaa;
+    border: 1px solid #1b2538;
+    border-radius: 4px;
+}
+
+.ef input[type='text']:focus {
+    border: 1px solid #da3c41;
+    outline: none;
+    box-shadow: 0 0 5px 1px rgba(218, 60, 65, .5);
+}
+
+.button {
+    display: inline-block;
+    border-radius: 10px;
+    /* 角丸       */
+    font-size: 1.5em;
+    /* 文字サイズ */
+    text-align: center;
+    /* 文字位置   */
+    cursor: pointer;
+    /* カーソル   */
+    padding: 12px 12px;
+    /* 余白       */
+    background: #333;
+    /* 背景色     */
+    color: #ffffff;
+    /* 文字色     */
+    line-height: 1em;
+    /* 1行の高さ  */
+    opacity: 0.8;
+    /* 透明度     */
+    transition: .5s;
+    /* なめらか変化 */
+    box-shadow: 3px 3px 8px #666666;
+    /* 影の設定 */
+    width: 300px;
+}
+
+.cp_iptxt2 {
+    width: 300px;
+    margin: 20px auto;
+}
+
+.inq_box {
+    width: 300px;
+    margin: 15px auto;
+}
+
+.button:hover {
+    box-shadow: none;
+    /* カーソル時の影消去 */
+    opacity: 1;
+    /* カーソル時透明度 */
+}
+
+.f_wrap {
+    background: #ffffff;
+    padding: 1px;
+    margin: 0 20px;
+}
+
+textarea {
+    width: 100% !important;
+    height: 100px !important;
+    border-radius: 4px;
+    font-size: 1em;
+    font: 15px/24px sans-serif;
+    box-sizing: border-box;
+    padding: 0.3em;
+    border: 1px solid #1b2538;
+    transition: 0.3s;
+}
+
+
+
+textarea[type='text']:focus {
+    border: 1px solid #da3c41;
+    outline: none;
+    box-shadow: 0 0 5px 1px rgba(218, 60, 65, .5);
+}

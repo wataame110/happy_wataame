@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nameless Person/お知らせ</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="本サイトは自己紹介がてら作成したWebサイトとなっております。" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/luxbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal-video.min.css">
+    <link rel="stylesheet" href="mailform/mailform.css">
+    <link href="../fonts.googleapis.com/css2d9f6.css?family=Jost:wght@300&amp;display=swap" rel="stylesheet">
+    <link href="../use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="loader-bg">
+        <div id="loader">
+            　<img src="images/loader.gif" alt="Loading..." />
+            　<p>Loading...</p>
+        </div>
+    </div>
+    <div id="contents">
+        <header id="luxbar" class="luxbar-fixed">
+            <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox" />
+            <div class="luxbar-menu luxbar-menu-right luxbar-menu-dark">
+                <ul class="luxbar-navigation">
+                    <li class="luxbar-header">
+                        <!-- <h1><a href="#" class="luxbar-brand"><img src="images/" alt=""></a></h1> -->
+                        <label class="luxbar-hamburger luxbar-hamburger-doublespin" id="luxbar-hamburger"
+                            for="luxbar-checkbox"> <span></span> </label>
+                    </li>
+                    <li class="luxbar-item"><a href="../../index.html">ホーム</a></li>
+                    <li class="luxbar-item"><a href="../index.html">お知らせ</a></li>
+                    <li class="luxbar-item"><a href="../../Academic background_career/index.html">学歴・職歴</a></li>
+                    <li class="luxbar-item"><a href="../../profile/index.html">プロフィール</a></li>
+                    <li class="luxbar-item"><a href="../../license/index.html">保有ライセンス</a></li>
+                    <li class="luxbar-item"><a href="../../sns/index.html">SNS</a></li>
+                    <li class="luxbar-item"><a href="../../questionbox/index.html">質問箱</a></li>
+                    <li class="luxbar-item"><a href="../../contact/index.html">問い合わせ</a></li>
+                    <li class="luxbar-item"><a href="../../gaibulink/index.html">外部リンク</a></li>
+                </ul>
+            </div>
+    </div>
+    <div>
+        </header>
+        <h2 id="home"></h2>
+        <div>
+            <div class="box_v">
+            <section>
+                <form>
+                    <fieldset>
+                        <a href="../../information/index.html"> お知らせ一覧に戻る</a>
+                    </fieldset>
+                </form>
+            </section>
+                        <div class="box about">
+                <h1>私のイヤホン事情について</h1>
+                <p>まれにご指摘をいただくことがあるので、このような形でお知らせをさせて頂きます。<br>
+                    比較的高頻度でフラッシュバックを引き起こしたり、身体の痛みといった様々な症状が出てきますがお気になさらず。
+                    (あ、ここだけの話...常時イヤホンを着用している理由は「音楽療法」で状態維持をするためです！)
+                <p>
+                <!--当サイトは、超絶適当に、暇つぶしがてらその場の気分で作ったサイトです。<br>なのでクオリティーなどは求めないでください。</> -->
+        </div>
+    </div>
+    <footer>
+        <p>wataame110.</p>
+    </footer>
+    </div>
+    <!--loader-->
+    <script>
+        $(function () {
+            var h = $(window).height(); // ブラウザウィンドウの高さを取得する
+            $('#contents').css('display', 'none'); // コンテンツを非表示にする
+            $('#loader-bg ,#loader').height(h).css('display', 'block'); //ローディング画像を表示
+        });
+        $(window).on('load', function () { // 読み込み完了したら実行する
+            $('#loader-bg').delay(900).fadeOut(800); // ローディングを隠す
+            $('#loader').delay(600).fadeOut(300);
+            $('#contens').css('display', 'block'); // コンテンツを表示する
+        });
+    </script>
+    <!--modal-->
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery-modal-video.js"></script>
+    <script>
+        $(".js-video-button").modalVideo({
+            youtube: {
+                controls: 1,
+                nocookie: true
+            }
+        });
+        $(".js-modal-btn-vimeo").modalVideo({
+            channel: 'vimeo'
+        });
+    </script>
+    <!--smooth scroll-->
+    <script>
+        jQuery(function () {
+            // ★　任意のズレ高さピクセル数を入力　↓
+            var headerHight = 100;
+            // #で始まるアンカーをクリックした場合に処理
+            jQuery('a[href^=#]').click(function () {
+                // スクロールの速度
+                var speed = 400; // ミリ秒
+                // アンカーの値取得
+                var href = jQuery(this).attr("href");
+                // 移動先を取得
+                var target = jQuery(href == "#" || href == "" ? 'html' : href);
+                // 移動先を数値で取得
+                var position = target.offset().top - headerHight; // ※　-headerHightでズレの処理
+                // スムーズスクロール
+                jQuery('body,html').animate({
+                    scrollTop: position
+                }, speed, 'swing');
+                return false;
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $('.luxbar-item a').on('click', function (event) {
+                $('#luxbar-checkbox').prop('checked', false);
+            });
+        });
+    </script>
+    <script src="js/totop.js"></script>
+    <script src="js/slide.js"></script>
+
+</body>
+</html>

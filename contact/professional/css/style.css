@@ -15,6 +15,11 @@
     .box_i ul li figure {
         text-align: center !important;
     }
+
+    article {
+        device-width:
+        margin: 0 auto;
+    }
 }
 
 
@@ -22,6 +27,12 @@ body {
     font-family: 'Jost', sans-serif;
     background-color: #fff;
 }
+
+/* article {
+    width: 960px;
+    device-width: auto;
+    margin: 0 auto;
+} */
 
 h1 img {
     width: 150px;

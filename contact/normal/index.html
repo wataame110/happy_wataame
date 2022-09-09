@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Nameless Person/問い合わせ</title>
     <meta charset="UTF-8">
     <meta name="description" content="本サイトは自己紹介がてら作成したWebサイトとなっております。" />
-    <meta name="keywords" content="" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/luxbar.css">
@@ -17,125 +17,125 @@
 </head>
 
 <body>
-    <div id="loader-bg">
-        <div id="loader">
-            　<img src="images/loader.gif" alt="Loading..." />
-            　<p>Loading...</p>
-        </div>
-    </div>
-    <div id="contents">
-        <header id="luxbar" class="luxbar-fixed">
-            <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox" />
-            <div class="luxbar-menu luxbar-menu-right luxbar-menu-dark">
-                <ul class="luxbar-navigation">
-                    <li class="luxbar-header">
-                        <!-- <h1><a href="#" class="luxbar-brand"><img src="images/" alt=""></a></h1> -->
-                        <label class="luxbar-hamburger luxbar-hamburger-doublespin" id="luxbar-hamburger"
-                            for="luxbar-checkbox"> <span></span> </label>
-                    </li>
-                    <li class="luxbar-item"><a href="../index.html">ホーム</a></li>
-                    <li class="luxbar-item"><a href="../information/index.html">お知らせ</a></li>
-                    <li class="luxbar-item"><a href="../Academic background_career/index.html">学歴・職歴</a></li>
-                    <li class="luxbar-item"><a href="../profile/index.html">プロフィール</a></li>
-                    <li class="luxbar-item"><a href="../license/index.html">保有ライセンス</a></li>
-                    <li class="luxbar-item"><a href="../sns/index.html">SNS</a></li>
-                    <li class="luxbar-item"><a href="../questionbox/index.html">質問箱</a></li>
-                    <li class="luxbar-item"><a href="index.html">問い合わせ</a></li>
-                    <li class="luxbar-item"><a href="../gaibulink/index.html">外部リンク</a></li>
-                </ul>
+    <article>
+        <div id="loader-bg">
+            <div id="loader">
+                　<img src="images/loader.gif" alt="Loading..." />
+                　<p>Loading...</p>
             </div>
-    </div>
-    <div>
-        </header>
+        </div>
+        <div id="contents">
+            <header id="luxbar" class="luxbar-fixed">
+                <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox" />
+                <div class="luxbar-menu luxbar-menu-right luxbar-menu-dark">
+                    <ul class="luxbar-navigation">
+                        <li class="luxbar-header">
+                            <!-- <h1><a href="#" class="luxbar-brand"><img src="images/" alt=""></a></h1> -->
+                            <label class="luxbar-hamburger luxbar-hamburger-doublespin" id="luxbar-hamburger"
+                                for="luxbar-checkbox"> <span></span> </label>
+                        </li>
+                        <li class="luxbar-item"><a href="../index.html">ホーム</a></li>
+                        <li class="luxbar-item"><a href="../information/index.html">お知らせ</a></li>
+                        <li class="luxbar-item"><a href="../Academic background_career/index.html">学歴・職歴</a></li>
+                        <li class="luxbar-item"><a href="../profile/index.html">プロフィール</a></li>
+                        <li class="luxbar-item"><a href="../license/index.html">保有ライセンス</a></li>
+                        <li class="luxbar-item"><a href="../sns/index.html">SNS</a></li>
+                        <li class="luxbar-item"><a href="../questionbox/index.html">質問箱</a></li>
+                        <li class="luxbar-item"><a href="index.html">問い合わせ</a></li>
+                        <li class="luxbar-item"><a href="../gaibulink/index.html">外部リンク</a></li>
+                    </ul>
+                </div>
+        </div>
         <div>
-            <div class="box" id="contact">
-                <h2 id="form">問い合わせ</h2>
-                <form id="mailform" method="post" action="mailto:kobatm7@gmail.com"
-                    onsubmit="return sendmail(this);">
-                    <div class="cp_iptxt">
-                        <label class="ef">
-                            <input type="text" placeholder="お名前" name="Name(必須)">
-                        </label>
-                    </div>
-                    <div class="cp_iptxt">
-                        <label class="ef">
-                            <input type="text" placeholder="メールアドレス" name="email(必須)">
-                        </label>
-                    </div>
-                    <div class="f_wrap">
+            </header>
+            <div>
+                <div class="box" id="contact">
+                    <h2 id="form">問い合わせ</h2>
+                    <form id="mailform" method="post" action="mailto:kobatm7@gmail.com"
+                        onsubmit="return sendmail(this);">
+                        <div class="cp_iptxt">
+                            <label class="ef">
+                                <input type="text" placeholder="お名前" name="Name(必須)">
+                            </label>
+                        </div>
+                        <div class="cp_iptxt">
+                            <label class="ef">
+                                <input type="text" placeholder="メールアドレス" name="email(必須)">
+                            </label>
+                        </div>
+                        <div class="f_wrap">
 
-                        <div class="cp_iptxt"><textarea name="Inquiry" placeholder="問い合わせ内容をお書きください"></textarea></div>
-                    </div>
-                    <div class="cp_iptxt2">
-                        <input type="submit" value="送信" class="button" />
-                    </div>
-                </form>
+                            <div class="cp_iptxt"><textarea name="Inquiry" placeholder="問い合わせ内容をお書きください"></textarea>
+                            </div>
+                        </div>
+                        <div class="cp_iptxt2">
+                            <input type="submit" value="送信" class="button" />
+                        </div>
+                    </form>
+                </div>
+        </article>
+                <footer>
+                    <p>wataame110.</p>
+                </footer>
             </div>
-            <footer>
-                <p>wataame110.</p>
-            </footer>
-        </div>
-        <!--loader-->
-        <script>
-            $(function () {
-                var h = $(window).height(); // ブラウザウィンドウの高さを取得する
-                $('#contents').css('display', 'none'); // コンテンツを非表示にする
-                $('#loader-bg ,#loader').height(h).css('display', 'block'); //ローディング画像を表示
-            });
-            $(window).on('load', function () { // 読み込み完了したら実行する
-                $('#loader-bg').delay(900).fadeOut(800); // ローディングを隠す
-                $('#loader').delay(600).fadeOut(300);
-                $('#contens').css('display', 'block'); // コンテンツを表示する
-            });
-        </script>
-        <!--modal-->
-        <script src="../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="js/jquery-modal-video.js"></script>
-        <script>
-            $(".js-video-button").modalVideo({
-                youtube: {
-                    controls: 1,
-                    nocookie: true
-                }
-            });
-            $(".js-modal-btn-vimeo").modalVideo({
-                channel: 'vimeo'
-            });
-        </script>
-        <!--smooth scroll-->
-        <script>
-            jQuery(function () {
-                // ★　任意のズレ高さピクセル数を入力　↓
-                var headerHight = 100;
-                // #で始まるアンカーをクリックした場合に処理
-                jQuery('a[href^=#]').click(function () {
-                    // スクロールの速度
-                    var speed = 400; // ミリ秒
-                    // アンカーの値取得
-                    var href = jQuery(this).attr("href");
-                    // 移動先を取得
-                    var target = jQuery(href == "#" || href == "" ? 'html' : href);
-                    // 移動先を数値で取得
-                    var position = target.offset().top - headerHight; // ※　-headerHightでズレの処理
-                    // スムーズスクロール
-                    jQuery('body,html').animate({
-                        scrollTop: position
-                    }, speed, 'swing');
-                    return false;
+            <!--loader-->
+            <script>
+                $(function () {
+                    var h = $(window).height(); // ブラウザウィンドウの高さを取得する
+                    $('#contents').css('display', 'none'); // コンテンツを非表示にする
+                    $('#loader-bg ,#loader').height(h).css('display', 'block'); //ローディング画像を表示
                 });
-            });
-        </script>
-        <script>
-            $(function () {
-                $('.luxbar-item a').on('click', function (event) {
-                    $('#luxbar-checkbox').prop('checked', false);
+                $(window).on('load', function () { // 読み込み完了したら実行する
+                    $('#loader-bg').delay(900).fadeOut(800); // ローディングを隠す
+                    $('#loader').delay(600).fadeOut(300);
+                    $('#contens').css('display', 'block'); // コンテンツを表示する
                 });
-            });
-        </script>
-        <script src="js/totop.js"></script>
-        <script src="js/slide.js"></script>
-
+            </script>
+            <!--modal-->
+            <script src="../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+            <script src="js/jquery-modal-video.js"></script>
+            <script>
+                $(".js-video-button").modalVideo({
+                    youtube: {
+                        controls: 1,
+                        nocookie: true
+                    }
+                });
+                $(".js-modal-btn-vimeo").modalVideo({
+                    channel: 'vimeo'
+                });
+            </script>
+            <!--smooth scroll-->
+            <script>
+                jQuery(function () {
+                    // ★　任意のズレ高さピクセル数を入力　↓
+                    var headerHight = 100;
+                    // #で始まるアンカーをクリックした場合に処理
+                    jQuery('a[href^=#]').click(function () {
+                        // スクロールの速度
+                        var speed = 400; // ミリ秒
+                        // アンカーの値取得
+                        var href = jQuery(this).attr("href");
+                        // 移動先を取得
+                        var target = jQuery(href == "#" || href == "" ? 'html' : href);
+                        // 移動先を数値で取得
+                        var position = target.offset().top - headerHight; // ※　-headerHightでズレの処理
+                        // スムーズスクロール
+                        jQuery('body,html').animate({
+                            scrollTop: position
+                        }, speed, 'swing');
+                        return false;
+                    });
+                });
+            </script>
+            <script>
+                $(function () {
+                    $('.luxbar-item a').on('click', function (event) {
+                        $('#luxbar-checkbox').prop('checked', false);
+                    });
+                });
+            </script>
+            <script src="js/totop.js"></script>
+            <script src="js/slide.js"></script>
 </body>
-<!-- Mirrored from www.foodunited.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Aug 2022 03:27:12 GMT -->
-
 </html>

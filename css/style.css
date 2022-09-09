@@ -20,7 +20,7 @@
 
 body {
     font-family: 'Jost', sans-serif;
-    background-color: #fff;
+    background-color: rgb(249, 251, 220);
 }
 
 h1 img {
@@ -144,7 +144,7 @@ h4 {
 }
 
 footer {
-    background: #cfcfcf;
+    background: #ffd2fe;
     text-align: center;
     margin-top: 5em;
     font-size: 80%;

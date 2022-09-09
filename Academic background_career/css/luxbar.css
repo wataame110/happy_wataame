@@ -250,13 +250,13 @@
 /******* default dark *******/
 .luxbar-menu-dark,
 .luxbar-menu-dark .dropdown ul {
-    background-color: rgba(33, 33, 33, 0.80);
-    color: #fff;
+    background-color: rgb(254, 255, 225);
+    color: rgb(98, 98, 98);
 }
 
 .luxbar-menu-dark .active,
 .luxbar-menu-dark .luxbar-item:hover {
-    background-color: #424242;
+    background-color: #b4feff;
 }
 
 .luxbar-menu-dark .luxbar-hamburger span,

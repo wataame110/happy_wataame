@@ -20,7 +20,7 @@
 
 body {
     font-family: 'Jost', sans-serif;
-    background-color: #fff;
+    background: linear-gradient(#cfffc6, #bcffbb, #a1ffa4);
 }
 
 h1 img {

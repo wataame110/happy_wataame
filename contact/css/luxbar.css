@@ -250,7 +250,7 @@
 /******* default dark *******/
 .luxbar-menu-dark,
 .luxbar-menu-dark .dropdown ul {
-    background-color: rgba(33, 33, 33, 0.80);
+    background-color: rgb(180, 235, 255);
     color: #fff;
 }
 

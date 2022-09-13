@@ -16,16 +16,16 @@
         text-align: center !important;
     }
 
-    article {
+    /* article {
         device-width:
         margin: 0 auto;
-    }
+    } */
 }
 
 
 body {
     font-family: 'Jost', sans-serif;
-    background-color: #fff;
+    background-color: rgb(245, 255, 220);
 }
 
 /* article {
@@ -34,7 +34,7 @@ body {
     margin: 0 auto;
 } */
 
-h1 img {
+h1 {
     width: 150px;
     padding-top: 10px;
 }

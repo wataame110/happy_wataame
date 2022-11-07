@@ -30,6 +30,7 @@ h1 {
 
 h2 {
     margin-top: 3em;
+    margin-bottom: -20px;
     font-size: 200%;
     text-align: center
 }
@@ -137,6 +138,7 @@ h4 {
 
 .about {
     font-size: 90%;
+    margin-bottom: -70px;
 }
 
 #about {

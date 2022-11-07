@@ -21,6 +21,7 @@
 body {
     font-family: 'Jost', sans-serif;
     background-color: rgb(249, 251, 220);
+    /* background-image: url(../images/tree3.jpg); */
 }
 
 h1 {
@@ -193,4 +194,13 @@ footer {
     width: 100% !important;
     height: 240px;
     margin: 0 !important;
+}
+
+.senzai {
+    margin-bottom: -90px;
+    border-radius: 50%;
+}
+
+.saitou {
+    margin-bottom: -50px;
 }

@@ -1,0 +1,74 @@
+body {
+  background: #ffdede;
+  /* HEX #と6桁の16進数で色を表す方法。
+  RRGGBB
+  */
+  line-height: 1.8;
+}
+article {
+  width: 960px;
+  margin: 0 auto;
+  background: rgb(255, 241, 203);
+}
+
+h1 {
+  color: rgb(255, 169, 169);
+  font-size: 150%;
+  background: rgb(197, 253, 255);
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 0em;
+  /* border-radius: 15px; */
+  /* 
+  margin: 0
+  値が一つの場合は上下左右
+  margin: 0 0
+  値が二つの場合は上下　左右
+  margin: 0 0 0
+  値が3つの場合は　上　左右　下
+  margin: 0 0 0 0
+  値が4つの場合は上　右　下　左
+  */
+}
+
+h2 {
+  background: #ffd9fc;
+  padding: 5px;
+  color: rgb(121, 141, 252);
+  text-align: center;
+  /* border-radius: 15px; */
+}
+
+p {
+  margin-bottom: 1em;
+  font-size: 100%;
+  text-align: center;
+  padding: 7px;
+  border-radius: 10px;
+}
+
+.ppap {
+  margin-bottom: 0em;
+  font-size: 100%;
+  text-align: center;
+  padding: 0px;
+  border-radius: 10px;
+}
+
+.index {
+  font-size: 14px;
+  background: #d5a5ff;
+  padding: 6px;
+  margin-bottom: 1em;
+  border-radius: 15px;
+}
+
+li {
+  margin-left: 2.5em;
+}
+
+.yycountdown-box{
+  text-align:center;
+  margin:10px 0;
+  color:#000000;
+}

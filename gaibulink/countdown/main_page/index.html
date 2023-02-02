@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <title>Secret Site(SS)</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name=”viewport” content=”width=device-width,initial-scale=1.0″>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- <link rel="stylesheet" href="common/css/reset.css"> -->
+  <link rel="stylesheet" href="common/css/common.css">
+  <link rel="stylesheet" href="css/jquery.yycountdown.css">
+  <!-- <style>
+      h1 {
+        font-size: 100px;
+        color: yellow;
+        text-align: right;
+      }
+    </style> -->
+</head>
+
+<body>
+  <article>
+    <header>
+      <h1>サイト説明</h1>
+      <p class="ppap">
+        ※このサイトは私が小学生の頃に決めて、いまだ崩れていない<br>自殺願望に基づく、自殺予定日時を表したサイトです。</br>
+      </p>
+    </header>
+    <section>
+      <h2>現在時刻と、自殺予定時刻までのタイムリミット</h2>
+      <p>
+        ページ展開日時<br>リロードをすれば随時最新の記録になりますされます。<br>
+        <script>
+
+          //今日の日付データを変数hidukeに格納
+          var hiduke = new Date();
+
+          //年・月・日・曜日を取得する
+          var year = hiduke.getFullYear();
+          var month = hiduke.getMonth() + 1;
+          var week = hiduke.getDay();
+          var day = hiduke.getDate();
+
+          var yobi = new Array("日", "月", "火", "水", "木", "金", "土");
+
+          document.write("西暦" + year + "年" + month + "月" + day + "日 " + yobi[week] + "曜日");
+
+        </script>
+        <script>
+
+          //時刻データを取得して変数jikanに格納する
+          var jikan = new Date();
+
+          //時・分・秒を取得する
+          var hour = jikan.getHours();
+          var minute = jikan.getMinutes();
+          var second = jikan.getSeconds();
+
+          document.write(hour + "時", +minute + "分" + second + "秒");
+
+        </script>
+      </p>
+      <p>
+        自殺予定時刻まで
+      <div id="olympic">
+        私の自殺予定日
+      </div>
+      <div id="olympicDate">
+        2032年12月31日23時58分
+      </div>
+      <div id="olympicDate">
+        予定日までの残り時間
+      </div>
+      <div id="timer"></div>
+
+      </p>
+    </section>
+    <footer>
+      <p>&copy; 2023 human X</p>
+    </footer>
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.yycountdown.min.js"></script>
+    <script type="text/javascript">
+      $("#timer").yycountdown({
+        endDateTime: '2032/12/31 23:58:00'
+      });
+    </script>
+  </article>
+</body>
+
+</html>

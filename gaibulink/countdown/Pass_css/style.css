@@ -1,6 +1,10 @@
 body {
     /* background-color: antiquewhite; */
     background-image: url(img/corosennse2.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: auto;
+    background-repeat: auto;
+}
+
+.retry {
+    background-color: white;
 }

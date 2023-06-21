@@ -24,6 +24,11 @@ body {
     /* background-image: url(../images/tree3.jpg); */
 }
 
+main {
+    width: 800px;
+    margin: 0 auto;
+}
+
 h1 {
     width: 150px;
     padding-top: 10px;

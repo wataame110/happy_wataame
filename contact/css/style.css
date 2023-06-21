@@ -149,6 +149,8 @@ footer {
     margin-top: 5em;
     font-size: 80%;
     padding: 15px;
+    position: absolute;/*←絶対位置*/
+    bottom: 0; /*下に固定*/
 }
 
 /*loader*/

@@ -1,5 +1,7 @@
 @media screen and (max-width:900px) {
 
+    .body
+    .body2
     .box ul,
     .box_v ul,
     .box_i ul {
@@ -24,7 +26,7 @@ body {
     /* background-image: url(../images/tree3.jpg); */
 }
 
-main {
+body2 {
     width: 800px;
     margin: 0 auto;
 }

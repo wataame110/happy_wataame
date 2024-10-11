@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Pass_css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/logo2.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/logo2.png">
+    <title>ログイン</title>
+</head>
+
+<body>
+    <script>
+        var pw;
+        pw = prompt("パスワードを入れて下さい。", "");
+        if (pw == "8893355411") {
+            location.href = "main_page/index.html";
+        } else {
+            alert("パスワードが違います");
+        }
+    </script>
+    <a class=retry onclick="window.location.reload(true);">
+        <i class="fa fa-refresh" aria-hidden="true"></i><span>リトライ</span>
+    </a>
+</body>
+
+</html>
